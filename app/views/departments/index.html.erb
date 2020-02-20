@@ -1,0 +1,7 @@
+<h1>Departments#index</h1>
+<h2>Select a Department below to see its items</h2>
+
+<% @departments.each do |department|%>
+  <h3><%= department.name %>
+  <h2><%= link_to "Visit Department", department_path(department) %>
+<% end %>
