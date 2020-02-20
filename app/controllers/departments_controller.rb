@@ -6,13 +6,24 @@ class DepartmentsController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
+    @department = Department.new
+  end
+
+  def create
+    @department = Department.new(department_params)
+    if @department.save
+      redirect_to departments_path
+    else
+      render :new
+    end
   end
 
   def edit
+    
   end
 
   def update
