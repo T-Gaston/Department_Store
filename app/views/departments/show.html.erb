@@ -1,4 +1,6 @@
 <h1>Department</h1>
 
 <h2><%= @department.name %></h2>
-<%= link_to "Back", departments_path %>
+
+<h4><%= link_to "Back to Items", department_items_path(@department) %></h4>
+<h4><%= link_to "Back to Departments", departments_path %><h4>
