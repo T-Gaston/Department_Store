@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = @department.items.new
-    render partial: "form"
+    # render partial: "form"
   end
 
   def create
